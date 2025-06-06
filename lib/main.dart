@@ -3,6 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
 import 'dart:convert';
+import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async{
     WidgetsFlutterBinding.ensureInitialized();
@@ -181,8 +182,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      Text(artist["name"]),
-                                      Text("Followers: ${artist["followers"]["total"]}"),
+                                      Text(
+                                        artist["name"],
+                                        style: GoogleFonts.sora(fontSize: 32),
+                                      ),
+                                      Text(
+                                        "${artist["followers"]["total"]} followers.",
+                                        style: GoogleFonts.sora(fontSize: 18),
+                                      ),
                                       Image.network(artist["images"][0]["url"])
                                     ]
                                   )
