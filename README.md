@@ -5,4 +5,5 @@ My apologies for the inconvenience.
 
 Example .env file:
 CLIENT_ID="**************************"
+
 CLIENT_SECRET="*************************"
