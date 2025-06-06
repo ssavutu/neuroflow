@@ -4,6 +4,7 @@ This project requires a .env file in the root directory of the project(where thi
 My apologies for the inconvenience.
 
 Example .env file:
+
 CLIENT_ID="**************************"
 
 CLIENT_SECRET="*************************"
